@@ -6,7 +6,7 @@ before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destro
   end
 
   def new
-    @jobs = Job.new
+    @job = Job.new
   end
 
   def show
@@ -19,7 +19,7 @@ before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destro
 
   def create
     @job = Job.new(job_params)
-    if @group.save
+    if @job.save
       redirect_to jobs_path
     else
       render :new
