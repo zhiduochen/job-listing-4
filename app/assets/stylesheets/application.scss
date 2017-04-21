@@ -75,15 +75,28 @@
       margin-bottom: 50px;
 
       .box-inner {
-          background-color: rgba(250, 250, 250, 0.69);
+          background-color: transparent;
           padding-bottom: 5px;
           margin-top: 150px;
           margin-bottom: 150px;
       }
 
       .title {
-          text-align: center;
-          margin-bottom: 80px;
+        font-family: "GungSeo", "Microsoft Yahei", 微软雅黑;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        color: #ffffff;
+      }
+
+      .subtitle {
+        font-family: "songti TC", "Microsoft Yahei", 微软雅黑;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: #ffffff;
+
       }
 
       .slogan {
@@ -93,6 +106,7 @@
           text-align: center;
           font-size: 25px;
           top: 12px;
+          color: #ffffff;
       }
 
       .lead {
@@ -110,24 +124,44 @@
   }
 
   .content-section-b {
+
       padding: 50px 0;
       border-top: 1px solid #e7e7e7;
       border-bottom: 1px solid #e7e7e7;
+      background-color: #dbdcdd;
+
   }
 
   .section-heading-spacer {
-      float: left;
+      float: center;
       width: 200px;
       border-top: 3px solid #e7e7e7;
   }
 
   .section-heading {
       margin-bottom: 30px;
+      text-align: center;
+      color: #760000;
   }
 
   .lead {
       font-size: 18px;
       font-weight: 400;
+      text-align: center;
+  }
+
+  .description {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .caption {
+    size: 18px;
+  }
+
+  .thumbnail {
+    text-align: center;
   }
 
   //---------Footer---------
