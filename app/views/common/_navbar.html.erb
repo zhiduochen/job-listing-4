@@ -8,7 +8,7 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <!-- 搜索-->
+        <!-- 搜索功能不想放在首页，还是在jobs的页面里去搜索,否则容易影响首页布局
               <div class="nav navbar-nav navbar-left">
               <%= form_tag "#" , :method => :get  do %>
               <div class="input-group" id="search-id" >
@@ -21,10 +21,11 @@
 
               </div>
               <% end %>
-            </div>
+            </div> -->
 
         <ul class="nav navbar-nav navbar-right">
           <li>
+                   <li><a href="#about">关于我们</a></li>
             <% if !current_user %>
                    <li><a href="#" data-toggle="modal" data-target="#signup-modal">注册</a></li>
                    <li><a href="#" data-toggle="modal" data-target="#login-modal">登入</a></li>

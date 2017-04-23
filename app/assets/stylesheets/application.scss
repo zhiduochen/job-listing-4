@@ -118,7 +118,7 @@
 //---------Navbar---------
 
   .navbar-default {
-      background-color: transparent;//背景颜色
+      background-color: #212121;//背景颜色
       border-color: #760000;//边框色
       margin-bottom: 0;//底部 margin 不撑开距离
       border-radius: 0;
@@ -282,3 +282,7 @@
       padding: 25px 0;
       background-color: #233140;
   }
+
+  html { height: 100%;}
+body { min-height: 100%; display: flex; flex-direction: column;}
+.content { flex: 1;}
