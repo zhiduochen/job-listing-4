@@ -4,10 +4,12 @@
 
           <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
             <%= f.error_notification %>
-            <h2 class="text-center">注 册</h2>
+            <h2 class="name text-center">注 <img src="http://ww3.sinaimg.cn/large/006tNc79ly1ff1clibr6bj308d08cwfw.jpg" height="30" width="30"> 册
+            </h2>
             <hr>
             <div class="form-inputs">
               <%= f.input :email, :label => "邮箱", required: true, autofocus: true %>
+              <!-- <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1"> 这是另外一种在填写栏内进行提示的方法-->
               <%= f.input :password, :label => "密码", required: true, hint: ("#{@minimum_password_length} 位数字或字母" if @minimum_password_length) %>
               <%= f.input :password_confirmation, :label => "确认密码", required: true %>
             </div>

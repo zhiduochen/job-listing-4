@@ -3,7 +3,9 @@
     <div class="col-md-4 col-md-offset-4 login-page">
 
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <h2 class="text-center">登录</h2>
+        <h2 class="name text-center">
+          登 <img src="http://ww3.sinaimg.cn/large/006tNc79ly1ff1clibr6bj308d08cwfw.jpg" height="30" width="30"> 录
+        </h2>
           <div class="form-inputs">
             <%= f.input :email, :label => "邮箱", required: false, autofocus: true %>
             <%= f.input :password, :label => "密码", required: false %>
