@@ -13,8 +13,16 @@ Rails.application.routes.draw do
       end
     end
 
+    namespace :favorite do
+      resources :jobs
+    end
+
 
     resources :jobs do
+      member do
+        post :collect
+        post :discollect
+      end
       collection do
         get :search
       end
